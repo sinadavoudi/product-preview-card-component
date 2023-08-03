@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <div class="lg:w-[650px] mobile:w-[340px] mobile:flex-col lg:flex-row lg:h-2/3 bg-white lg:rounded-md mobile:rounded-xl flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <img class="h-100 lg:rounded-l-md mobile:hidden lg:block" src="./images/image-product-desktop.jpg" alt="">
+      <img class="h-100 rounded-t-xl lg:hidden" src="./images/image-product-mobile.jpg" alt="">
+      <!-- <div class="bg-fixed" style="background-image: url('./images/image-product-desktop.jpg')"></div> -->
+
+      <div class="flex flex-col lg:p-10 lg:w-1/2 mobile:p-3 mobile:px-5 mobile:justify-between">
+          <p class="font-['Montserrat'] text-[#6c7289] lg:tracking-[7px] mobile:tracking-[4px] mobile:pt-3 uppercase font-medium text-sm mobile:pb-3">Perfume</p>
+          
+          <br class="mobile:hidden">
+          <h1 class="font-['Fraunces'] lg:text-3xl lg:w-56 mobile:text-3xl mobile:pb-3">Gabrielle Essence Eau De Parfum</h1>
+          <br class="mobile:hidden">
+          <p class="whitespace-normal text-[#6c7289] text-sm mobile:pb-4 mobile:w-auto">
+            A floral, solar and voluptuous
+            interpretation composed by
+            Olivier Polge, Perfumer-Creator
+            for the House of CHANEL.
+
+          </p>
+          <br class="mobile:hidden">
+          <div class="mobile:pb-4 flex items-center mobile:items-center">
+            <h1 class="text-3xl font-['Fraunces'] text-[#3c8067]">$149.99</h1>
+            <p class="line-through text-[#6c7289] text-sm pl-5">$169.99</p>
+          </div>
+          <br class="mobile:hidden">
+          <button class="bg-[#3c8067] flex items-center justify-center mobile:mb-3  text-center rounded-lg text-white h-12 hover:bg-[#1a4031] "><img class="mr-3" src="./images/icon-cart.svg">Add to Cart</button>
+      </div>
+    </div>
+  
+
+ 
+
+ 
+
+
+
+  
+  
+  <div class="attribution absolute bottom-0 left-1/2 -translate-x-1/2">Coded by <a target="_blank" href="https://sinadavoudi.github.io">SEA</a>.
+  </div>
+</body>
+</html>
